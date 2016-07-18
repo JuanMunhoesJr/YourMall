@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F394AF61D3D4D6500491F07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F394AF51D3D4D6500491F07 /* AppDelegate.swift */; };
-		3F394AF81D3D4D6500491F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F394AF71D3D4D6500491F07 /* ViewController.swift */; };
 		3F394AFB1D3D4D6500491F07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F394AF91D3D4D6500491F07 /* Main.storyboard */; };
 		3F394AFD1D3D4D6500491F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F394AFC1D3D4D6500491F07 /* Assets.xcassets */; };
 		3F394B001D3D4D6500491F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F394AFE1D3D4D6500491F07 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		3F394AF21D3D4D6500491F07 /* YourMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F394AF51D3D4D6500491F07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F394AF71D3D4D6500491F07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F394AFA1D3D4D6500491F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F394AFC1D3D4D6500491F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F394AFF1D3D4D6500491F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,45 @@
 		3F394AF41D3D4D6500491F07 /* YourMall */ = {
 			isa = PBXGroup;
 			children = (
-				3F394AF51D3D4D6500491F07 /* AppDelegate.swift */,
-				3F394AF71D3D4D6500491F07 /* ViewController.swift */,
-				3F394AF91D3D4D6500491F07 /* Main.storyboard */,
+				3F394B0A1D3D4E7C00491F07 /* AppDelegate */,
+				3F394B071D3D4E6300491F07 /* Model */,
+				3F394B081D3D4E6900491F07 /* View */,
+				3F394B091D3D4E6C00491F07 /* Controller */,
 				3F394AFC1D3D4D6500491F07 /* Assets.xcassets */,
-				3F394AFE1D3D4D6500491F07 /* LaunchScreen.storyboard */,
 				3F394B011D3D4D6500491F07 /* Info.plist */,
 			);
 			path = YourMall;
+			sourceTree = "<group>";
+		};
+		3F394B071D3D4E6300491F07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F394B081D3D4E6900491F07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F394AF91D3D4D6500491F07 /* Main.storyboard */,
+				3F394AFE1D3D4D6500491F07 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F394B091D3D4E6C00491F07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3F394B0A1D3D4E7C00491F07 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3F394AF51D3D4D6500491F07 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +164,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F394AF81D3D4D6500491F07 /* ViewController.swift in Sources */,
 				3F394AF61D3D4D6500491F07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
