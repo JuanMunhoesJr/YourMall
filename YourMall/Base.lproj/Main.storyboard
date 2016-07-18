@@ -89,9 +89,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="botaoBuscar" destination="ULP-4n-pxJ" id="wny-EU-gDf"/>
-                        <outlet property="txtCidade" destination="kw9-kQ-bLl" id="ijE-Jh-5GW"/>
-                        <outlet property="txtShopping" destination="gby-zf-MtL" id="o9p-gA-OTB"/>
+                        <outlet property="botaoBuscar" destination="ULP-4n-pxJ" id="5oN-eh-WfC"/>
+                        <outlet property="txtCidade" destination="kw9-kQ-bLl" id="ntV-HM-Nxn"/>
+                        <outlet property="txtShopping" destination="gby-zf-MtL" id="FpW-WJ-jfe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4j-zM-FbO" userLabel="First Responder" sceneMemberID="firstResponder"/>

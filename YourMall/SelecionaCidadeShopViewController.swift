@@ -10,10 +10,19 @@ import UIKit
 
 class SelecionaCidadeShopViewController: UIViewController {
 
+    
+    @IBOutlet weak var txtCidade:UITextField!
+    @IBOutlet weak var txtShopping:UITextField!
+    @IBOutlet weak var botaoBuscar:UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        botaoBuscar.layer.cornerRadius = 2.0
+        botaoBuscar.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
