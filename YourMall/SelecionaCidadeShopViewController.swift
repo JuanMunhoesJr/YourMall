@@ -10,11 +10,12 @@ import UIKit
 
 class SelecionaCidadeShopViewController: UIViewController {
 
-    
     @IBOutlet weak var txtCidade:UITextField!
     @IBOutlet weak var txtShopping:UITextField!
     @IBOutlet weak var botaoBuscar:UIButton!
-    
+    @IBOutlet weak var viewPicker:UIView!
+    @IBOutlet weak var pickerView:UIPickerView!
+    @IBOutlet weak var buttaoOk:UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
