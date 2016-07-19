@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6F4-Ww-YE9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6F4-Ww-YE9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YourMall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qh-v9-dnc">
-                                <rect key="frame" x="39" y="126" width="523" height="39.5"/>
+                                <rect key="frame" x="39" y="126" width="523" height="40"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="33"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -40,9 +40,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULP-4n-pxJ">
                                         <rect key="frame" x="0.0" y="172" width="523" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.21960784310000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="BUSCAR">
+                                        <state key="normal" title="SELECIONAR">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selecionarAlvo" destination="6F4-Ww-YE9" eventType="touchUpInside" id="qwA-mm-RNp"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="HhA-x3-6ZC">
                                         <rect key="frame" x="493" y="0.0" width="30" height="30"/>
@@ -86,7 +89,11 @@
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnj-9h-Zau">
                                         <rect key="frame" x="0.0" y="148" width="600" height="44"/>
                                         <items>
-                                            <barButtonItem title="Ok" id="Os6-jm-DS7"/>
+                                            <barButtonItem title="Ok" id="Os6-jm-DS7">
+                                                <connections>
+                                                    <action selector="fecharOk" destination="6F4-Ww-YE9" id="bdb-qh-HXN"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </items>
                                     </toolbar>
                                 </subviews>
@@ -117,19 +124,181 @@
                     </view>
                     <connections>
                         <outlet property="botaoBuscar" destination="ULP-4n-pxJ" id="5oN-eh-WfC"/>
-                        <outlet property="buttaoOk" destination="Os6-jm-DS7" id="fVI-vZ-FoD"/>
+                        <outlet property="botaoOk" destination="Os6-jm-DS7" id="dxl-kb-YTm"/>
                         <outlet property="pickerView" destination="ga3-Tz-oAh" id="vkG-51-46d"/>
                         <outlet property="txtCidade" destination="kw9-kQ-bLl" id="ntV-HM-Nxn"/>
                         <outlet property="txtShopping" destination="gby-zf-MtL" id="FpW-WJ-jfe"/>
                         <outlet property="viewPicker" destination="gfL-Rg-ynh" id="AG1-fO-9EO"/>
+                        <segue destination="idN-dr-O6I" kind="presentation" identifier="tabsegue" id="1pT-ct-dFq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4j-zM-FbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="-842"/>
+            <point key="canvasLocation" x="-742" y="-646"/>
+        </scene>
+        <!--Categoria-->
+        <scene sceneID="2zQ-yc-i5V">
+            <objects>
+                <viewController id="J3S-w3-UM9" customClass="CategoriaViewController" customModule="YourMall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HxD-cI-MrK"/>
+                        <viewControllerLayoutGuide type="bottom" id="NAG-7U-90y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sos-rp-qc0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geV-bs-3xZ">
+                                <rect key="frame" x="264" y="248" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Categoria" image="category" id="p2S-Qv-Rne"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8U-ye-cA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="-282"/>
+        </scene>
+        <!--Top Ofertas-->
+        <scene sceneID="NlM-hE-p9c">
+            <objects>
+                <viewController id="qrk-Zg-Kwb" customClass="TopOfertasViewController" customModule="YourMall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zty-es-XDb"/>
+                        <viewControllerLayoutGuide type="bottom" id="d7c-si-BOu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l7w-xw-cgr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="top ofertas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKX-De-LmG">
+                                <rect key="frame" x="258" y="289" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Top Ofertas" image="top" id="9Mn-V0-5DA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Vd-xL-Vrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="1085"/>
+        </scene>
+        <!--Configurações-->
+        <scene sceneID="pTH-I8-und">
+            <objects>
+                <viewController id="Lhw-IB-fd1" customClass="ConfiguracoesViewController" customModule="YourMall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qzp-NQ-Id6"/>
+                        <viewControllerLayoutGuide type="bottom" id="qmf-LM-ST0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dLE-1X-Uym">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="configuracoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zA-1X-hzn">
+                                <rect key="frame" x="245" y="289" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="U8O-GO-ciA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BOD-9x-izl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="1813"/>
+        </scene>
+        <!--Busca-->
+        <scene sceneID="Nao-Yh-5mh">
+            <objects>
+                <viewController id="YH3-eJ-zWN" customClass="BuscaViewController" customModule="YourMall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zVQ-V9-AH8"/>
+                        <viewControllerLayoutGuide type="bottom" id="EXR-qg-eeh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WTN-Df-SNU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="busca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdg-UK-nGs">
+                                <rect key="frame" x="277" y="233" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Busca" image="search" id="k1P-cJ-llB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZp-br-BRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="373"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="Uqm-bt-ZNo">
+            <objects>
+                <viewController id="F3m-3L-OEZ" customClass="PerfilViewController" customModule="YourMall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YyD-lf-atL"/>
+                        <viewControllerLayoutGuide type="bottom" id="EQO-b1-EcG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L8F-HO-qh0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="perfil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfG-hx-SED">
+                                <rect key="frame" x="280" y="222" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="profile" id="w1c-UR-NBG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLA-IU-RzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="-984"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TxM-Of-JMV">
+            <objects>
+                <tabBarController id="idN-dr-O6I" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="xKz-oP-hNE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="F3m-3L-OEZ" kind="relationship" relationship="viewControllers" id="EPD-ys-YBU"/>
+                        <segue destination="J3S-w3-UM9" kind="relationship" relationship="viewControllers" id="Q1P-af-SWl"/>
+                        <segue destination="YH3-eJ-zWN" kind="relationship" relationship="viewControllers" id="Yg7-Uu-uQ2"/>
+                        <segue destination="qrk-Zg-Kwb" kind="relationship" relationship="viewControllers" id="zLS-u4-fKq"/>
+                        <segue destination="Lhw-IB-fd1" kind="relationship" relationship="viewControllers" id="Vmm-Ua-L1a"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJv-Lv-A4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="-646"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow_down" width="128" height="128"/>
+        <image name="category" width="30" height="30"/>
+        <image name="profile" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
+        <image name="settings" width="30" height="30"/>
+        <image name="top" width="30" height="30"/>
     </resources>
 </document>
