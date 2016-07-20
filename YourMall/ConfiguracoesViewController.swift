@@ -10,10 +10,24 @@ import UIKit
 
 class ConfiguracoesViewController: UITableViewController {
 
+    @IBOutlet weak var lblCidade:UILabel!
+    @IBOutlet weak var lblShopping:UILabel!
+    @IBOutlet weak var switchGps:UISwitch!
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBar.hidden = true
+    }
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController?.navigationBar.hidden = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        lblCidade.text = Sessao.singleton.getObjeto("Cidade")
+        lblShopping.text = Sessao.singleton.getObjeto("Shopping")
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,9 +37,13 @@ class ConfiguracoesViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if indexPath.row == 4{
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
-
     /*
     // MARK: - Navigation
 

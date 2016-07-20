@@ -47,6 +47,8 @@ class SelecionaCidadeShopViewController: UIViewController,UITextFieldDelegate,UI
             mostrarAlerta("Campos em branco", mensagem: "A cidade e o shopping precisa ser selecionado.")
         }
         else{
+            Sessao.singleton.salvarObjeto(txtCidade.text!, chave: "Cidade")
+            Sessao.singleton.salvarObjeto(txtShopping.text!, chave: "Shopping")
             self.performSegueWithIdentifier("tabsegue", sender: self)
         }
     }

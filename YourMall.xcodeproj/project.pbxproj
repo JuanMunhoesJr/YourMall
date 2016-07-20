@@ -14,6 +14,10 @@
 		3F394B0E1D3D51AB00491F07 /* SelecionaCidadeShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F394B0D1D3D51AB00491F07 /* SelecionaCidadeShopViewController.swift */; };
 		3FAB5BAF1D3E962800EF9151 /* CellOfertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB5BAE1D3E962800EF9151 /* CellOfertas.swift */; };
 		3FAB5BB11D3E9E8500EF9151 /* Oferta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB5BB01D3E9E8500EF9151 /* Oferta.swift */; };
+		E4ABCFDF1D3EEADD006D87D8 /* ControleTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ABCFDE1D3EEADD006D87D8 /* ControleTabbar.swift */; };
+		E4ABCFE11D3EFF63006D87D8 /* Sessao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ABCFE01D3EFF63006D87D8 /* Sessao.swift */; };
+		E4ABCFE31D3F0FE0006D87D8 /* PrivacidadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ABCFE21D3F0FE0006D87D8 /* PrivacidadeViewController.swift */; };
+		E4ABCFE51D3F0FEA006D87D8 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ABCFE41D3F0FEA006D87D8 /* SobreViewController.swift */; };
 		E4EC43771D3E760400D918E2 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC43761D3E760400D918E2 /* PerfilViewController.swift */; };
 		E4EC43791D3E761400D918E2 /* CategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC43781D3E761400D918E2 /* CategoriaViewController.swift */; };
 		E4EC437B1D3E762B00D918E2 /* BuscaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC437A1D3E762B00D918E2 /* BuscaViewController.swift */; };
@@ -31,6 +35,10 @@
 		3F394B0D1D3D51AB00491F07 /* SelecionaCidadeShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelecionaCidadeShopViewController.swift; sourceTree = "<group>"; };
 		3FAB5BAE1D3E962800EF9151 /* CellOfertas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellOfertas.swift; sourceTree = "<group>"; };
 		3FAB5BB01D3E9E8500EF9151 /* Oferta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oferta.swift; sourceTree = "<group>"; };
+		E4ABCFDE1D3EEADD006D87D8 /* ControleTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControleTabbar.swift; sourceTree = "<group>"; };
+		E4ABCFE01D3EFF63006D87D8 /* Sessao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sessao.swift; sourceTree = "<group>"; };
+		E4ABCFE21D3F0FE0006D87D8 /* PrivacidadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacidadeViewController.swift; sourceTree = "<group>"; };
+		E4ABCFE41D3F0FEA006D87D8 /* SobreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
 		E4EC43761D3E760400D918E2 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		E4EC43781D3E761400D918E2 /* CategoriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaViewController.swift; sourceTree = "<group>"; };
 		E4EC437A1D3E762B00D918E2 /* BuscaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuscaViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				3FAB5BB01D3E9E8500EF9151 /* Oferta.swift */,
+				E4ABCFE01D3EFF63006D87D8 /* Sessao.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -105,6 +114,9 @@
 				E4EC437A1D3E762B00D918E2 /* BuscaViewController.swift */,
 				E4EC437C1D3E76E100D918E2 /* TopOfertasViewController.swift */,
 				E4EC437E1D3E783A00D918E2 /* ConfiguracoesViewController.swift */,
+				E4ABCFDE1D3EEADD006D87D8 /* ControleTabbar.swift */,
+				E4ABCFE21D3F0FE0006D87D8 /* PrivacidadeViewController.swift */,
+				E4ABCFE41D3F0FEA006D87D8 /* SobreViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -197,14 +209,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAB5BAF1D3E962800EF9151 /* CellOfertas.swift in Sources */,
+				E4ABCFE31D3F0FE0006D87D8 /* PrivacidadeViewController.swift in Sources */,
 				E4EC43771D3E760400D918E2 /* PerfilViewController.swift in Sources */,
 				3F394B0E1D3D51AB00491F07 /* SelecionaCidadeShopViewController.swift in Sources */,
 				E4EC437F1D3E783A00D918E2 /* ConfiguracoesViewController.swift in Sources */,
+				E4ABCFE51D3F0FEA006D87D8 /* SobreViewController.swift in Sources */,
 				E4EC437B1D3E762B00D918E2 /* BuscaViewController.swift in Sources */,
 				E4EC437D1D3E76E100D918E2 /* TopOfertasViewController.swift in Sources */,
 				E4EC43791D3E761400D918E2 /* CategoriaViewController.swift in Sources */,
 				3FAB5BB11D3E9E8500EF9151 /* Oferta.swift in Sources */,
 				3F394AF61D3D4D6500491F07 /* AppDelegate.swift in Sources */,
+				E4ABCFE11D3EFF63006D87D8 /* Sessao.swift in Sources */,
+				E4ABCFDF1D3EEADD006D87D8 /* ControleTabbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

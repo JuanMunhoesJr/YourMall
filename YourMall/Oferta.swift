@@ -16,7 +16,7 @@ class Oferta: NSObject {
     var descricao:String!
     var categoria:String!
     var preco:Double = 0
-
+    
     init(nome:String,total:Int, descricao:String, categoria:String, preco:Double){
         self.nomeLoja = nome
         self.totalVisualizacoes = total

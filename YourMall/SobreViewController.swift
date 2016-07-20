@@ -1,5 +1,5 @@
 //
-//  BuscaViewController.swift
+//  SobreViewController.swift
 //  YourMall
 //
 //  Created by Juan Munhoes Junior on 7/19/16.
@@ -8,16 +8,19 @@
 
 import UIKit
 
-class BuscaViewController: UITableViewController {
+class SobreViewController: UIViewController {
 
-    
     override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBar.hidden = false
+    }
+    override func viewWillDisappear(animated: Bool) {
         self.navigationController?.navigationBar.hidden = true
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = "Sobre"
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,9 +28,7 @@ class BuscaViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
+
     /*
     // MARK: - Navigation
 

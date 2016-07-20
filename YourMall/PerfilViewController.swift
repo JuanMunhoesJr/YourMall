@@ -8,14 +8,41 @@
 
 import UIKit
 
-class PerfilViewController: UIViewController {
+class PerfilViewController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var txtEmail:UITextField!
+    @IBOutlet weak var txtSenha:UITextField!
+    @IBOutlet weak var botaoEntrar:UIButton!
+    @IBOutlet weak var botaoFacebook:UIButton!
+    @IBOutlet weak var botaoCadastrar:UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        txtEmail.delegate = self
+        txtSenha.delegate = self
+        
+        
+        botaoEntrar.layer.cornerRadius = 2.0
+        botaoFacebook.layer.cornerRadius = 2.0
+        botaoEntrar.clipsToBounds = true
+        botaoFacebook.clipsToBounds = true
     }
 
+    
+    @IBAction func entrar(){
+        
+    }
+    
+    @IBAction func cadastrar(){
+        
+    }
+    
+    @IBAction func facebook(){
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

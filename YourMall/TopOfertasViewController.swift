@@ -59,7 +59,13 @@ class TopOfertasViewController: UIViewController,UITableViewDelegate,UITableView
         cell.lblNomeLoja.text = oferta.nomeLoja
         cell.lblCategoria.text = oferta.categoria
         cell.lblDescricao.text = oferta.descricao
-        cell.lblValor.text = String(format: "R$ %.2f", oferta.preco)
+        
+        if Sessao.singleton.usuarioConectado(){
+            cell.lblValor.text = String(format: "R$ %.2f", oferta.preco)
+        }
+        else{
+            cell.lblValor.text = "Efetue o login para saber mais informações."
+        }
         return cell
     }
     
