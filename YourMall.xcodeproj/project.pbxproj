@@ -15,7 +15,6 @@
 		3FAB5BAF1D3E962800EF9151 /* CellOfertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB5BAE1D3E962800EF9151 /* CellOfertas.swift */; };
 		3FAB5BB11D3E9E8500EF9151 /* Oferta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB5BB01D3E9E8500EF9151 /* Oferta.swift */; };
 		E422FF121D40468C001395F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E422FF111D40468C001395F4 /* GoogleService-Info.plist */; };
-		E422FF1B1D404CDA001395F4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E422FF1A1D404CDA001395F4 /* GoogleMobileAds.framework */; };
 		E422FF211D404CE4001395F4 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E422FF1C1D404CE4001395F4 /* FirebaseAnalytics.framework */; };
 		E422FF221D404CE4001395F4 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E422FF1D1D404CE4001395F4 /* FirebaseInstanceID.framework */; };
 		E422FF231D404CE4001395F4 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E422FF1E1D404CE4001395F4 /* GoogleInterchangeUtilities.framework */; };
@@ -94,7 +93,6 @@
 		3FAB5BAE1D3E962800EF9151 /* CellOfertas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellOfertas.swift; sourceTree = "<group>"; };
 		3FAB5BB01D3E9E8500EF9151 /* Oferta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oferta.swift; sourceTree = "<group>"; };
 		E422FF111D40468C001395F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Firebase/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E422FF1A1D404CDA001395F4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Firebase/AdMob/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		E422FF1C1D404CE4001395F4 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Firebase/Analytics/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		E422FF1D1D404CE4001395F4 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Firebase/Analytics/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		E422FF1E1D404CE4001395F4 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Firebase/Analytics/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
@@ -220,7 +218,6 @@
 				E422FF2F1D404D06001395F4 /* FirebaseCrash.framework in Frameworks */,
 				E422FF521D404D75001395F4 /* FirebaseRemoteConfig.framework in Frameworks */,
 				E422FF431D404D3A001395F4 /* GooglePlusUtilities.framework in Frameworks */,
-				E422FF1B1D404CDA001395F4 /* GoogleMobileAds.framework in Frameworks */,
 				E422FF561D404D82001395F4 /* FirebaseStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +338,6 @@
 				E422FF1E1D404CE4001395F4 /* GoogleInterchangeUtilities.framework */,
 				E422FF1F1D404CE4001395F4 /* GoogleSymbolUtilities.framework */,
 				E422FF201D404CE4001395F4 /* GoogleUtilities.framework */,
-				E422FF1A1D404CDA001395F4 /* GoogleMobileAds.framework */,
 				E422FF111D40468C001395F4 /* GoogleService-Info.plist */,
 			);
 			name = Firebase;
@@ -605,7 +601,6 @@
 					"$(PROJECT_DIR)/YourMall/Firebase/Auth",
 					"$(PROJECT_DIR)/YourMall/Firebase/Database",
 					"$(PROJECT_DIR)/YourMall/Firebase/Storage",
-					"$(PROJECT_DIR)/YourMall/Firebase/AdMob",
 					"$(PROJECT_DIR)/YourMall/Firebase/Analytics",
 					"$(PROJECT_DIR)/YourMall/Firebase/AppIndexing",
 					"$(PROJECT_DIR)/YourMall/Firebase/Crash",
@@ -635,7 +630,6 @@
 					"$(PROJECT_DIR)/YourMall/Firebase/Auth",
 					"$(PROJECT_DIR)/YourMall/Firebase/Database",
 					"$(PROJECT_DIR)/YourMall/Firebase/Storage",
-					"$(PROJECT_DIR)/YourMall/Firebase/AdMob",
 					"$(PROJECT_DIR)/YourMall/Firebase/Analytics",
 					"$(PROJECT_DIR)/YourMall/Firebase/AppIndexing",
 					"$(PROJECT_DIR)/YourMall/Firebase/Crash",
