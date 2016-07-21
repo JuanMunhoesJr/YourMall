@@ -25,11 +25,26 @@ class SelecionaCidadeShopViewController: UIViewController,UITextFieldDelegate,UI
     var shoppingsSorocaba:[String] = ["Shopping Cidade Sorocaba","Shopping Iguatemi","Sorocaba Shopping Center","Pátio Cianê Shopping"]
     
     var pickerData: [String] = [String]()
+    
+
+    override func viewWillAppear(animated: Bool) {
+        self.view.hidden = false
+    }
+    override func viewDidAppear(animated: Bool) {
+        if Sessao.singleton.existeObjeto("Cidade") && Sessao.singleton.existeObjeto("Shopping"){
+            print(Sessao.singleton.getObjeto("Cidade"))
+            print(Sessao.singleton.getObjeto("Shopping"))
+            self.performSegueWithIdentifier("tabsegue", sender: self)
+        }
+        else{
+            self.view.hidden = false
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        self.view.hidden = true
         botaoBuscar.layer.cornerRadius = 2.0
         botaoBuscar.clipsToBounds = true
         
@@ -40,7 +55,6 @@ class SelecionaCidadeShopViewController: UIViewController,UITextFieldDelegate,UI
         txtShopping.delegate = self
         
         esconderCombo()
-        
     }
     @IBAction func selecionarAlvo(){
         if txtCidade.text == "" || txtShopping.text == ""{
@@ -135,8 +149,8 @@ class SelecionaCidadeShopViewController: UIViewController,UITextFieldDelegate,UI
             let alert = UIAlertController(title:titulo, message: mensagem, preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
-        }
-        
+    }
+    
     /*
     // MARK: - Navigation
 

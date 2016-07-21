@@ -13,18 +13,6 @@ class Sessao:NSObject {
     static let singleton = Sessao()
     private override init(){} // Previne terceiros da utilização
     
-    func getEmailUsuario() -> String{
-        return getObjeto("email")
-    }
-    
-    func usuarioConectado() -> Bool{
-        // verifica se existe usuario salvo em userdafalts
-        if getEmailUsuario() != ""{
-            return true
-        }
-        return false
-    }
-    
     func salvarObjeto(objeto:String, chave:String){
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(objeto, forKey: chave)

@@ -39,7 +39,8 @@ class ConfiguracoesViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
+        Sessao.singleton.removeObjeto("Cidade")
+        Sessao.singleton.removeObjeto("Shopping")
         if indexPath.row == 4{
             self.dismissViewControllerAnimated(true, completion: nil)
         }
