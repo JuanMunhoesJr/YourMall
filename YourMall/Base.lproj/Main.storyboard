@@ -725,9 +725,6 @@
                                                 <state key="normal" title="FACEBOOK">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="facebook" destination="F3m-3L-OEZ" eventType="touchUpInside" id="MMo-I4-Bim"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

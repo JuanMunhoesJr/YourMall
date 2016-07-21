@@ -52,8 +52,7 @@ class PerfilViewController: UIViewController,UITextFieldDelegate,FBSDKLoginButto
     }
 
     @IBAction func entrar(){
-        
-        
+    
         self.viewSpinner.hidden = false
         self.spinner.startAnimating()
         if txtEmail.text == "" || txtSenha.text == ""{
@@ -85,14 +84,12 @@ class PerfilViewController: UIViewController,UITextFieldDelegate,FBSDKLoginButto
         self.performSegueWithIdentifier("segueCadastrar", sender: nil)
     }
     
-    @IBAction func facebook(){
-        
-    }
-    
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         
     }
+    
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        
         
     }
     
