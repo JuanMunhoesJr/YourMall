@@ -81,6 +81,10 @@ class PerfilViewController: UIViewController,UITextFieldDelegate,FBSDKLoginButto
         }
     }
     
+    @IBAction func cadastrar(){
+        self.performSegueWithIdentifier("segueCadastrar", sender: nil)
+    }
+    
     @IBAction func facebook(){
         
     }
